@@ -1,0 +1,101 @@
+.btn-black{
+  background-color: #5c5c5c;
+    border-color: #646464;
+    color: #b2b2b2;
+}
+
+.btn-black:hover{
+    background-color: #646464;
+    border-color: #646464;
+}
+
+body {
+    font-family: "Microsoft Yahei", 微软雅黑, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    color: rgb(187, 187, 187);
+    width: 100%;
+    text-align: left;
+    background-color: rgb(68, 68, 68);
+    background-image: url(./img/wangluo1.jpg);
+    background-attachment:fixed;
+    white-space: normal;
+    word-wrap: break-word;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0px auto !important;
+}
+
+#ad-carousel{
+    max-height: 500px;
+}
+
+#ad-carousel img{
+    height: 450px; 
+}
+
+.my_a{
+    color: white;
+    text-decoration:none;
+}
+
+.my_a:hover{
+    color: #a8a8a8;
+    text-decoration:none;
+}
+
+.my_a:visited{
+    text-decoration:none;
+}
+
+.my_right_li{
+    line-height: 30px;
+}
+
+.my_magin_label{
+    margin-right: 10px;
+}
+
+.my_a_head{
+    color:#a0a0a0;
+    text-decoration:none;
+}
+
+.my_a_head:hover{
+    color: #ffffff;
+    text-decoration:none;
+}
+
+.my_a_head:visited{
+    color: #a8a8a8;
+    text-decoration:none;
+}
+
+.my_well{
+    margin-top: 40px;
+    opacity:0.7;
+    background-color: black;
+    width: 95%;
+}
+
+.p_time{
+    margin-top: 30px;
+}
+
+.main_content_img{
+    max-width: 70%;
+    height: 100px;
+}
+
+.my_p_right{
+    line-height: 32px;
+}
+
+.foot_p{
+    text-align: center;
+    color: white;
+}
+
+.foot_p a{
+    color: white;
+    text-decoration: none;
+}

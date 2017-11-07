@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="./css/video-js.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="main.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="./img/logo.jpg" rel="shortcut icon" />
+  </head>
+  <body>
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="./index.html">HBC</a>
+        </div>
+        <div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="./index.html">主页</a></li>
+            <li><a href="./my_submit.html">关于我</a></li>
+        </ul>
+        <div class="navbar-right navbar-form">
+        <button class="btn btn-group btn-primary btn-black">注册</button>
+        </div>
+        <div class="navbar-right navbar-form">
+        <a href="login.html" class="btn btn-group btn-primary btn-black">登陆</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    C++ <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">入门语法</a></li>
+                    <li><a href="#">个人作品</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">编程工具</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">推荐书籍</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    linux <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">常用命令</a></li>
+                    <li><a href="#">TCP/IP优化相关</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">ISO及国内源汇总</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">推荐书籍</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="navbar-right navbar-form">
+        <input type="text" class="form-control" placeholder="搜一下">
+        <button class="btn btn-group btn-primary btn-black">站内搜索</button>
+        </div>
+    </div>
+    </div>
+</nav>
+    <div class="container">
+
+          <!--轮播--->
+    <div id="ad-carousel" class="carousel slide" data-ride="carousel">
+           <ol class="carousel-indicators">
+               <li data-target="#ad-carousel" data-slide-to="0" class="active"></li>
+               <li data-target="#ad-carousel" data-slide-to="1"></li>
+               <li data-target="#ad-carousel" data-slide-to="2"></li>
+               <li data-target="#ad-carousel" data-slide-to="3"></li>
+               <li data-target="#ad-carousel" data-slide-to="4"></li>
+           </ol>
+           <div class="carousel-inner">
+           <div class="item active">
+               <img src="img/bakcground.jpg" class="form-control" alt="1 slide">
+               <div class="container">
+                   <div class="carousel-caption">
+                       <h1><a href="#" class="my_a">你为什么编程</a></h1>
+                       <p>关于程序的奥秘</p>
+                       <p></p>
+                   </div>
+               </div>
+           </div>
+           <div class="item">
+                <img src="img/boy.png" class="form-control" alt="2 slide">
+                <div class="carousel-caption">
+                       <h1><a href="#" class="my_a">互联网之子</a></h1>
+                       <p>他因为编程而年少成名，然而二十岁之后志向已不在编程。<br>——亚伦·斯沃茨</p>
+                       <p></p>
+                   </div>
+           </div>
+           <div class="item">
+                <img src="img/c++.jpg" class="form-control" alt="3 slide">
+                <div class="carousel-caption">
+                       <h1><a href="#" class="my_a">关于STL和BOOST的使用姿势</a></h1>
+                       <p>boost就是STL以后的样子，所以不足的地方当然只能说考虑不如STL周全了。<br>——轮子哥</p>
+                       <p></p>
+                   </div>
+           </div>
+           <div class="item">
+                <img src="img/python.jpg" class="form-control" alt="4 slide">
+                <div class="carousel-caption">
+                       <h1><a href="#" class="my_a">人生苦短，我用python</a></h1>
+                       <p>为什么说”人生苦短，我用python“？</p>
+                       <p></p>
+                   </div>
+           </div>
+           <div class="item">
+                <img src="img/linux.jpg" class="form-control" alt="5 slide">
+                <div class="carousel-caption">
+                       <h1><a href="#" class="my_a">《完全用Linux 工作》</a></h1>
+                       <p>我已经半年没有使用 Windows 的方式工作了。Linux 高效的完成了我所有的工作。 
+                       <br>——王垠</p>
+                       <p></p>
+                   </div>
+           </div>
+           </div>
+           <a href="#ad-carousel" data-slide="prev" class="left carousel-control"><span class="glyphicon glyphicon-chevron-left"></span></a>
+             <a href="#ad-carousel" data-slide="next" class="right carousel-control"><span class="glyphicon glyphicon-chevron-right"></span></a>
+           </div>
+           
+    <div class="row">
+        <div class="col-md-8">
+        <a href="#" class="my_a_head">
+        <div class="well my_well">
+           <span class="label label-primary my_magin_label">编程</span>
+           <span class="label label-danger my_magin_label">高并发</span>
+           <span class="label label-warning my_magin_label">c/c++开发</span>
+           
+            <div class="row">
+                <div class="col-md-9">
+                    <h3>关于经典著作APUE和UNP的几点看法和个人见解</h3>
+                    <p class="p_time">
+                    2017-10-31 16:06:45  阅读量: 1259
+                    </p>
+                </div>
+                <div class="col-md-3">
+                <img src="img/main1.jpg" class="main_content_img" alt="">
+                </div>
+            </div>
+        </div> 
+        </a>
+        
+        <a href="#" class="my_a_head">
+        <div class="well my_well">
+           <span class="label label-success my_magin_label">运维</span>
+           <span class="label label-primary my_magin_label">路由</span>
+            <div class="row">
+               
+                <div class="col-md-9">
+                    <h3>GNS3入门使用建议</h3>
+                    <p class="p_time">
+                    2017-10-01 23:09:10  阅读量: 6092
+                    </p>
+                </div>
+                <div class="col-md-3">
+                <img src="img/GNS3.jpeg" class="main_content_img" alt="">
+                </div>
+            </div>
+        </div> 
+        </a>
+        
+        <a href="#" class="my_a_head">
+        <div class="well my_well">
+           <span class="label label-info my_magin_label">协议</span>
+           <span class="label label-danger my_magin_label">高并发</span>
+            <div class="row">
+                <div class="col-md-9">
+                    <h3>开发中TCP/IP的坑</h3>
+                    <p class="p_time">
+                    2017-9-20 10:23:04  阅读量: 509
+                    </p>
+                </div>
+                <div class="col-md-3">
+                <img src="img/TCPIP.png" class="main_content_img" alt="">
+                </div>
+            </div>
+        </div> 
+        </a>
+        
+        <a href="#" class="my_a_head">
+        <div class="well my_well">
+           <span class="label label-danger my_magin_label">高并发</span>
+           <span class="label label-primary my_magin_label">编程</span>
+            <div class="row">
+                <div class="col-md-9">
+                    <h3>常见的几种高并发模型应用场景</h3>
+                    <p class="p_time">
+                    2015-09-03 09:06:26  阅读量: 2340
+                    </p>
+                </div>
+                <div class="col-md-3">
+                <img src="img/server.png" class="main_content_img" alt="">
+                </div>
+            </div>
+        </div> 
+        </a>           
+    </div>
+       
+        <div class="col-md-4">
+            <div class="well my_well">
+                <h4><span class="glyphicon glyphicon-time"></span>&nbsp;&nbsp;最近文章</h4>
+                <hr>
+                <ul>
+                    <li class="my_right_li"><a class="my_a" href="#">关于经典著作APUE和UNP的几点看法和个人见解</a></li>
+                    <li class="my_right_li"><a class="my_a" href="#">GNS3入门使用建议</a></li>
+                    <li class="my_right_li"><a class="my_a" href="#">开发中TCP/IP的坑</a></li>
+                    <li class="my_right_li"><a class="my_a" href="#">常见的几种高并发模型应用场景</a></li>
+                    <li class="my_right_li"><a class="my_a" href="#">linux内核入门</a></li>
+                </ul>
+            </div>
+            <div class="well my_well">
+                <h4>
+                <span class="glyphicon glyphicon-time"></span>&nbsp;&nbsp;标签</h4>
+                <hr>
+                <p class="my_p_right">
+                <span class="label label-primary my_magin_label">编程</span>
+               <span class="label label-danger my_magin_label">高并发</span>
+               <span class="label label-warning my_magin_label">c/c++开发</span>
+               <span class="label label-info my_magin_label">协议</span>
+               <span class="label label-danger my_magin_label">高并发</span>
+               <span class="label label-success my_magin_label">运维</span>
+               <span class="label label-primary my_magin_label">路由</span>
+               <span class="label label-primary my_magin_label">linux</span>
+               <span class="label label-danger my_magin_label">windows</span>
+               <span class="label label-warning my_magin_label">网络编程</span>
+               <span class="label label-info my_magin_label">nginx</span>
+               <span class="label label-success my_magin_label">apache</span>
+               </p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="footer">
+        <hr>
+        <div class="container">
+            <p class="foot_p">
+                Powered by: <a href="http://www.bootcss.com/">Bootstrap</a> <a href="http://glyphicons.com/">Glyphicons Halflings</a>
+                <br>
+                Copyright © 2017-2018
+            </p>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="./js/video.min.js"></script>
+    <script>
+    videojs.options.flash.swf = "video-js.swf";
+    </script>
+    <script>
+       $(function(){
+           $('#ad-carousel').carousel();
+           $('#menu-nav .navbar-collapse a').click(function(e){
+               var href = $(this).attr('href');
+               var tabId = $(this).attr('data-tab');
+               if('#'!==href){
+                   e.preventDefault();
+                   $(document).scrollTop($(href).offset().top - 70);
+                   if(tabId){
+                       $('#feature-tab a[href=#'+tabId +']').tab('show');
+                   }
+               }
+           })
+       })
+    </script>
+  </body>
+</html>
