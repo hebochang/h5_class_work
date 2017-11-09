@@ -1,0 +1,36 @@
+.banner{
+    background: url(img/submit_img.jpg);
+    background-color: black;
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size:100%;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.banner h1{
+    margin: 0px 0px;
+    padding-top: 200px;
+    padding-bottom: 12px;
+    color: white;
+}
+
+.banner p{
+    line-height: 30px;
+    margin: 0px 0px;
+    color: white;
+}
+
+.my_well_submit{
+    margin-top: 10px;
+    background-color: black;   
+}
+
+.small_btn{
+    padding: 0px 0px;
+    width: 30px;
+}
+
+.my_p_line{
+    line-height: 30px;
+}
