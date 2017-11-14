@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="./css/video-js.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="main.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="./img/logo.jpg" rel="shortcut icon" />
+  </head>
+  <body>
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="./index.html">HBC</a>
+        </div>
+        <div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="./index.html">主页</a></li>
+            <li><a href="./jianli.html">关于我</a></li>
+            <li><a href="ftp://115.159.58.102/">资料下载</a></li>
+        </ul>
+        <div class="navbar-right navbar-form">
+        <button class="btn btn-group btn-primary btn-black">注册</button>
+        </div>
+        <div class="navbar-right navbar-form">
+        <a href="login.html" class="btn btn-group btn-primary btn-black">登陆</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    C++ <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">入门语法</a></li>
+                    <li><a href="#">个人作品</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">编程工具</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">推荐书籍</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    linux <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">常用命令</a></li>
+                    <li><a href="#">TCP/IP优化相关</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">ISO及国内源汇总</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">推荐书籍</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="navbar-right navbar-form">
+        <input type="text" class="form-control" placeholder="搜一下">
+        <button class="btn btn-group btn-primary btn-black">站内搜索</button>
+        </div>
+    </div>
+    </div>
+</nav>
+    <div class="container">
+    <img src="./img/eassy1.jpg" class="" alt="" style="width:100%;height: 450px;">
+    <div class="row">
+       <div class="container">
+        <div class="col-md-8">
+        <div class="well my_well">
+           <h1>
+               APUE学习心得体会
+           </h1>
+           <hr>
+           <p>
+               强烈建议:
+文中涉及的图书最好入手一个英文版的，如果实在阅读有困难，可以在电脑中准备一个中文版的进行参考，但要强迫自己循序渐进的脱离使用中文版。&nbsp;<wbr><br>
+
+<br>
+1. 书目&nbsp;<wbr><br>
+<br>
+注：文中对所有书籍的引用都会使用开头的编号, 或者简称。&nbsp;<wbr><br>
+<br>
+&lt;1&gt; "The C Programming Language", 2nd edition, by Brian
+Kernighan &amp; Dennis Ritchie&nbsp;<wbr><br>
+-- C语言最经典的教材，阅读前最好有一点编程的基础。本书简称K&amp;R。&nbsp;<wbr><br>
+<br>
+&lt;2&gt; "Computer Systems: A Programmer's Perspective", 2nd
+edition, by David R. O'Hallaron&nbsp;<wbr><br>
+--
+以汇编和C程序作为例子，从程序员而不是设计者的角度，讲解计算机系统软硬件体系结构的书。很有想法的书。&nbsp;<wbr><br>
+
+<br>
+&lt;3&gt; "Advanced Programming in the UNIX environment", 2nd
+edition, by W. Richard Stevens and Stephen A.
+Rago&nbsp;<wbr><br>
+-- Unix/Linux
+环境编程的最好教材，把操作系统的原理，unix的接口和设计思路，以及C程序实例这三者很好的结合在了一起，不可多得的好书。本书简称
+APUE2&nbsp;<wbr><br>
+<br>
+&lt;4&gt; "Linux Kernel Development", 3rd edition, by robert
+love&nbsp;<wbr><br>
+-- Linux kernel 入门的书籍，深入浅出，很适合新人入门。简称 LKD3&nbsp;<wbr><br>
+<br>
+&lt;5&gt; "Linux Device Drivers", 3rd Edition, by Jonathan Corbet,
+Alessandro Rubini, and Greg Kroah-Hartman&nbsp;<wbr><br>
+-- 教给你写linux驱动的书，有实例，有框架，有细节，把和驱动沾边的知识都讲得很细致。简称LDDR3。 下载:
+http://lwn.net/Kernel/LDD3/&nbsp;<wbr><br>
+<br>
+&lt;6&gt; "Understanding the Linux Kernel", 3rd edition, by Marco
+Cesati Ph.D.&nbsp;<wbr><br>
+-- 讲解linux kernel的实现，包括设计思路，调用关系图，数据结构，算法，以及一些kernel编程技巧。简称
+ULK3。&nbsp;<wbr><br>
+<br>
+&lt;7&gt; "TCP/IP Illustrated, Vol. 1,2,3", by W. Richard
+Stevens&nbsp;<wbr><br>
+--
+讲解TCP/IP协议的经典书，第一卷介绍协议，必读，有大量的tcpdump实例，跟着操作和分析很有乐趣。第二卷介绍BSD上面的实现，第三卷介绍了HTTP等其他的协议。&nbsp;<wbr><br>
+
+<br>
+&lt;8&gt; "Unix Network Programming, Vol. 1,2", 3rd edition, by W.
+Richard Stevens, Bill Fenner, Andrew M.
+Rudoff&nbsp;<wbr><br>
+-- 第一卷介绍了unix环境下的socket编程，还是有实例，很好的结合了协议，还涉及了一些实现原理。第二卷介绍了unix
+IPC，似乎和APUE有重复之嫌，我没有看过这卷。&nbsp;<wbr><br>
+<br>
+&lt;9&gt; "Understanding Linux Network Internals", Christian
+Benvenuti&nbsp;<wbr><br>
+-- 详细介绍了linux网络协议栈的实现细节。可惜没有涉及tcp的实现和netfilter。</p>
+<br>
+2. 目标&nbsp;<wbr><br>
+本文假设读者要成为linux环境系统程序员，涉及linux用户空间编程，网络编程和linux
+驱动编程。&nbsp;<wbr><br>
+本文讲述的是我自己的学习和工作体会，希望大家能批判的理解，最终找到自己的路。</p>
+
+
+3. K&amp;R 和 开发环境&nbsp;<wbr><br>
+<br>
+K&amp;R
+当然是一切的基础，必须认真学好，对于没有编程经验的人来说，拿这本书入门有点难度，必须认真完成书里的习题，能额外找些习题练手当然更好。有C语言经验的同学学起来轻松一些，抓重点难点看，书中关于指针的介绍很好，言简意赅。学通透之后，K&amp;R
+还可以成为手册，忘记了翻看一下还是必要的，这书要一直留着。&nbsp;<wbr><br>
+<br>
+在学习 K&amp;R 的时候，同学就可以弄一个linux的主机玩一下了，(推荐debian,
+ubuntu)装个基本系统，把开发包装一下，这些教程网上都有，自己查查吧，K&amp;R里边的例子最好在linux上面跑，学学gcc，make，vim的基本用法，不要太深入的学，先够用就可以了。&nbsp;<wbr><br>
+
+<br>
+到这里，总体上还是轻松愉快的，我们开始找到一点入门的感觉了，但其实和入门还有很大的距离，继续努力吧。
+
+
+4. APUE 的考验&nbsp;<wbr><br>
+经常看到一些同学没有看过APUE就开始学写driver，这其实是不太合适的，如果说K&amp;R是基础的话，那么
+APUE就是我们学习过程的核心，APUE不单纯介绍接口，编程这些东西，书里边涉及的思想，方法，会贯穿程序员的整个生涯，比如，书里边谈到了policy和mechanism这两个unix系统重要的概念，并且用实例阐述它们，对我们理解unix系统有重要的意义。因此，我们要好好读，反复读这本书。&nbsp;<wbr><br>
+
+当然，书里边涉及过多的知识，新手往往感觉很困难；因此，我们要注意方法。&nbsp;<wbr><br>
+(1)
+必须把书里的实例在linux上面跑一下，Richard的书都是很有操作性的，建议同学最好用手敲的方式，把里边一些短小的程序编译执行一下，如果能改改功能，调试调试那就更好了。APUE里的许多知识点必须是在实践中才能理解和掌握的。&nbsp;<wbr><br>
+
+(2) 切忌贪多，贪快，不要想一口气把书都读完，最好先攻读一些重点的章节: File I/O, Process, Signal,
+IPC等等，适当展开，多练习练习，对于不太懂的概念，多google百度一下。&nbsp;<wbr><br>
+(3) 产生迷惑和疑问的时候，多和别人讨论一下，发贴子问一下，交流很重要。&nbsp;<wbr><br>
+<br>
+当我们在学习APUE的过程中，感到应接不暇比较苦恼的时候，我建议同学要放慢节奏，弄一弄 gcc makefile gdb vim
+linux命令 bash编程这些, google一些教程来学习，学写一些复杂的例子。同时，google一些简单的项目,
+或者复杂的C练习题做做，尽量用到上面的工具，增加熟练度。&nbsp;<wbr><br>
+这个过程是一个略显漫长的学习过程，是程序员面临的第一个坎，需要坚持不懈。等跨过去之后，就海阔天空了。&nbsp;<wbr><br>
+
+<br>
+另外，就我个人而言，我会在阅读和学习的过程中，把一些重要的知识点，tips,
+trick，重要的例程都整理成一个文档，方便将来查阅使用，这个习惯保持整个学习和开发生活始终。&nbsp;<wbr>
+
+5. 学习实际项目的源码&nbsp;<wbr><br>
+<br>
+经常看到有人建议通过阅读一些简单的开源项目来提高自己，我觉得这个做法很好，但是要注意时机:&nbsp;<wbr><br>
+
+(1) 至少精读过一遍APUE的重要章节&nbsp;<wbr><br>
+(2) 能看懂makefile，了解autoconf，比较熟练的使用vim, gcc, gdb,
+strace等工具(不会的google一下教程)。&nbsp;<wbr><br>
+<br>
+好吧，这个时候，有些同学已经辛苦的精读过APUE所有的重要章节了(注意，不一定是全部的章节)，看看，这个时候，坚持手敲APUE实例代码的同学就有优势了，他们vim相对会熟练一些:)那我们还等什么，赶紧开始吧，其实，我们还差一个事情需要准备，&nbsp;<wbr><br>
+
+<br>
+(3) 学会使用 cscope, 不知道这个是什么？google去吧。，vim+cscope
+看代码，谁用谁知道。本文不想涉及工具之争(vim或emacs),
+IDE之争，无论你选什么都可以，只要好用就行。&nbsp;<wbr><br>
+<br>
+准备就绪，选择什么项目开始呢？我建议从简单的开始，coreutils&nbsp;<wbr><br>
+<br>
+源码可以从这里下载:　http://www.gnu.org/software/coreutils/&nbsp;<wbr><br>
+
+<br>
+是什么呢？对，部分linux命令的源码，从简单的(一般size比较小)开始学起，看看库函数和系统调用怎样相互配合，完成一个linux命令的功能。&nbsp;<wbr><br>
+
+我们可能发现源码里边宏定义特别多，影响阅读，或者缩进风格诡异，看着费劲，没有办法，慢慢适应吧，vim有命令可以收起展开宏里边的代码，或者美化代码缩进，自己查查怎么用。还有一些函数没见过，setlocal()等等，没关系查查APUE，或者
+google，能把一个简单的源文件彻底搞明白，你会收获很多。同时，你对APUE的理解也会更进一步，你越来越体会出这个书的宝贵，也越来越离不开它。&nbsp;<wbr><br>
+
+<br>
+经过一段时间的探索，你也许会感觉这些源码也不过如此，不那么神秘了，恭喜你，现在你算是入门了。从现在开始，你已经可以开始干活了。&nbsp;<wbr>
+
+
+
+
+7 反思，梳理，制定计划&nbsp;<wbr><br>
+<br>
+我们有了项目经验了，我们开始干活了，往往这个时候，我们也开始膨胀了。具体表现是，等着上面放任务干活，没活可干的时候就玩，也不看书了，觉得自己就是大牛了，在bbs上还能给新新手回答一些问题了(注意，这时候往往会给出错误的答案)，一些程序员就是在这个阶段停滞不前的，很可惜。&nbsp;<wbr><br>
+
+这个时候，我觉得可以开始给自己新的任务了，学习kernel也许是不错的选择，不过，下一步怎么做不是最重要的，最重要的是，要在思想上清楚的认识到，自己其实是刚刚入门，对于linux
+kernel/driver
+还没有入门，我还有很多的坎需要迈。这个心态需要同学们好好体会.&nbsp;<wbr><br>
+另外,
+在继续学习之前，有必要梳理一下之前的学习心得，整理笔记，甚至重读一下APUE，往往你还会有新的收获：你会发现，在linux环境下面学习和工作的方法逐渐清晰了起来；你也许会偶而灵光一闪一个念头，然后迫不及待的写个小程序验证它。这些方法和习惯会在今后的学习和工作中慢慢完善，形成linux程序员特有的风格。&nbsp;<wbr><br>
+
+<br>
+这个时候，由于我们也许参与大的项目了，下一步的学习计划需要结合自己的实际情况，并没有固定的套路。对于本文涉及的领域来说，有两个方向:
+linux driver和网络编程。对于其他的方向，肯定还有，但是本文并不涉及。&nbsp;<wbr><br>
+<br>
+后文会根据这两个方向分别进行阐述。
+
+8. 网络协议和搭建实验环境&nbsp;<wbr><br>
+<br>
+在进行网络编程之前，先要了解tcp/ip协议；想学习网络协议栈的实现，一定要把网络编程搞熟；想学习alsa驱动，先要熟悉使用asla库调用；类似这些学习的顺序，大家要注意。&nbsp;<wbr><br>
+
+<br>
+在展开对&lt;7&gt;"TCP/IP Illustrated, Vol.
+1"学习之前，我们需要考虑搭建网络环境的问题，找一台内存大些的PC，装虚拟机就搞定了(最好VMware,其他的我不确定是否可行),
+具体的拓扑结构参考书里开头就给出的网络，不需要百分百复制，体会精神就行。有2个router，2-3个host，1个gateway，这是必须的吧，等学习内容变化的时候，拓扑可以跟着改变。&nbsp;<wbr><br>
+
+<br>
+这里再强调一下Richard书的学习方法，如果不能跟上实验操作，单纯看书效果差多了。即使有条件接触实际复杂网络的同学也要建一套虚拟机的环境，不能影响别人是不。&nbsp;<wbr><br>
+
+<br>
+书没啥好说的，讲得很好，我们关注一下
+tcpdump：这是学习网络的核心工具，大家要随着书中的例子好好学习这个工具的使用，争取在看完之后机能熟练掌握tcpdump的用法。对于书里稍复杂一些的知识点，比如
+tcp 的慢启动，超时重传等等要用 tcpdump 的结果去印证，加深印象。&nbsp;<wbr><br>
+<br>
+另外，wireshark 也是一个不错的工具，提供了图形化的界面，比tcpdump友好一些，而且用tcpdump保存下来的raw
+data是可以用 wireshark 进行分析的，这两个工具可以配合着用。&nbsp;<wbr><br>
+(annals网友: 还ethereal，用wireshark已经很久了)&nbsp;<wbr><br>
+<br>
+经过APUE的煎熬，读协议简直就是一种享受，各种念头通达，稍微复杂的例子也可以配合tcpdump来理解，可这只是开始，重头戏在后面。
+
+9. 网络编程 UNP&nbsp;<wbr><br>
+<br>
+学习UNP的方法和APUE差不多，看书，练习例子。如果能加上tcpdump的分析，那就更好了。经过一段时间，你会发现UNP就是对APUE的复习嘛，信号，线程，系统调用这些都要用到，而且比APUE上的讲法要更实际，更有操作性。&nbsp;<wbr><br>
+
+<br>
+书里经常会用不同的方法去实现同一个功能，或者把一个简单的例子逐渐添加血肉，变成复杂的例子。这些都是Linux著作常用的方法，注意体会，将来自己写文章或许可以用到；写程序的时候，也可以遵循先简单后复杂的过程，符合认识规律。<br>
+
+<br>
+书里边的例子也很经典，比如 select(), poll()
+的例子，同学可以敲一遍多跑跑，整理到文档里，将来要写这种程序的时候，拿来就用，方便快哉。&nbsp;<wbr><br>
+
+<br>
+有了APUE的基础，UNP的进展应该比较顺利，下面就是用具体的项目代码入手了。
+
+10. hping 上&nbsp;<wbr><br>
+<br>
+我们通过学习hping的用法及其源码，巩固对协议的认识和熟悉网络编程。hping3可以在这里得到：
+http://www.hping.org/hping3-20051105.tar.gz&nbsp;<wbr><br>
+<br>
+看看这个工具是干嘛的，注意README里边提到，这是一个学习tcp/ip绝佳工具(It's also really a good
+didactic tool to learn TCP/IP),
+这个版本还支持tcl脚本了，比我那个时候强大了嘛:)&nbsp;<wbr><br>
+哎，同学，不要着急看源码啊，忘了顺序了嘛？不先熟悉一下hping3的命令，怎么能上来就看代码呢？还是先build一下把，这次讲得稍微复杂一些:&nbsp;<wbr><br>
+
+<br>
+一般 linux 源码包的编译过程一般是&nbsp;<wbr><br>
+<br>
+$ ./configure&nbsp;<wbr><br>
+$ make&nbsp;<wbr><br>
+$ make install&nbsp;<wbr><br>
+<br>
+hping也不例外&nbsp;<wbr><br>
+<br>
+$ ./configure&nbsp;<wbr><br>
+$ make&nbsp;<wbr><br>
+<br>
+这个时候，我这边报错了&nbsp;<wbr><br>
+gcc -c -O2 -Wall -g main.c&nbsp;<wbr><br>
+main.c:29:18: error: pcap.h: No such file or
+directory&nbsp;<wbr><br>
+main.c:169: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’
+before ‘*’ token&nbsp;<wbr><br>
+main.c:170: error: ‘PCAP_ERRBUF_SIZE’ undeclared here (not in a
+function)&nbsp;<wbr><br>
+make: *** [main.o] Error 1&nbsp;<wbr><br>
+<br>
+有经验的同学可能知道，这是缺少pcap开发包了，如果不知道也没关系，google一下就能找到答案了，另外，或许还会缺少tcl-dev包，请在下面的url找到相应的源码包，或者自行寻找和发行版对应的二进制包，这里就不详细展开了。&nbsp;<wbr><br>
+
+http://www.tcpdump.org/release/libpcap-1.1.1.tar.gz&nbsp;<wbr><br>
+
+http://www.tcl.tk/&nbsp;<wbr><br>
+<br>
+继续make，开头过去了，不过又一个错误：&nbsp;<wbr><br>
+<br>
+libpcap_stuff.c:20:21: error: net/bpf.h: No such file or
+directory&nbsp;<wbr><br>
+libpcap_stuff.c: In function ‘pcap_recv’:&nbsp;<wbr><br>
+libpcap_stuff.c:61: warning: pointer targets in assignment differ
+in signedness&nbsp;<wbr><br>
+make: *** [libpcap_stuff.o] Error 1&nbsp;<wbr><br>
+<br>
+这次又需要google一下了，用关键自 net/bpf.h
+搜索一下，很快找到解决方法:&nbsp;<wbr><br>
+<br>
+$ ln -snf /usr/include/pcap-bpf.h
+/usr/include/net/bpf.h&nbsp;<wbr><br>
+<br>
+然后顺利通过:&nbsp;<wbr><br>
+<br>
+$ make&nbsp;<wbr><br>
+$ make install&nbsp;<wbr><br>
+<br>
+大功告成。
+
+11. hping 下&nbsp;<wbr><br>
+<br>
+可以看看 hping3 的文档，如果感觉不太直观，google一下别人的教程(推荐
+http://wiki.hping.org)。练习一些简单的命令, 如果在教程里发现什么idle scanning, Packet
+crafting等字眼，请大家自动过滤，我什么都没说过, 什么都没说过......&nbsp;<wbr><br>
+<br>
+hping有两种工作模式，script和command line模式。&nbsp;<wbr><br>
+<br>
+这里给一个command
+line模式简单的例子，用hping发一个icmp包到指定的host&nbsp;<wbr><br>
+$ hping -V -1 www.google.com&nbsp;<wbr><br>
+这个时候，也可以用tcpdump抓包看看:&nbsp;<wbr><br>
+$ tcpdump -n -i ethX icmp&nbsp;<wbr><br>
+<br>
+下面是script模式的例子，用hping发一个icmp包到指定的服务器。&nbsp;<wbr><br>
+$ hping # 进入脚本解释器&nbsp;<wbr><br>
+hping3&gt; hping resolve wiki.hping.org&nbsp;<wbr><br>
+109.74.203.151&nbsp;<wbr><br>
+hping3&gt; hping send
+{ip(daddr=109.74.203.151)+icmp(type=8,code=0)}&nbsp;<wbr><br>
+
+<br>
+我们也可先编写脚本(例如xxx.tcl)，然后用下面的命令执行:&nbsp;<wbr><br>
+<br>
+$ hping exec xxx.tcl&nbsp;<wbr><br>
+<br>
+wiki.hping.org上面有很复杂的脚本示例，这种方法本让hacker从C程序的繁重工作解脱出来，通过简单易用的脚本可以实现灵活强大的功能。&nbsp;<wbr><br>
+
+<br>
+看源码的话，可以从main()函数看起，看看command line模式下的代码流程。&nbsp;<wbr><br>
+从hping_script()这个函数调用开始，会进入到script模式的处理code，不建议新手学习。&nbsp;<wbr><br>
+
+hping使用SOCK_RAW发送各种类型的包tcp/udp/icmp等等，并统一使用pcap库来捕捉返回包，要注意和使用SOCK_STREAM时的思路是不同的，前者需要自己构造ip包头，对照着协议阅读整个过程是必要的。&nbsp;<wbr><br>
+
+当同学对hping的脚本和源码有了一定的了解，你也就对网络编程开始入门了，同时，随着Linux环境下的学习和工作方法的逐步成熟，你会发现学习效率在提高，信心在增强，通过耐心的分析研究，这些开源项目的源码不在话下。&nbsp;<wbr><br>
+
+<br>
+补：等写完了发现，并没有给出一个client/server类的例子供大家学习，iperf
+不知是否合适，请大家自行编译执行分析。如果大家有时间，可以考虑自行设计一个复杂一点的程序，client/server模式的，用到信号，多线程，socket，select，文件I/O，IPC
+等等，算是一个总结，后边开始进入kernel space的世界。
+
+12. 从LKD开始&nbsp;<wbr><br>
+<br>
+我们打开参考书&lt;4&gt;"Linux Kernel Development", 书的作者Robert
+love是kernel的设计者之一，但他并没有把书写得深奥难懂，分寸把握的很好，仅仅400页的篇幅，就讲解了Kernel的绝大多数要点，重点突出，细枝末节一笔带过，决不拖泥带水。书的篇幅少也和引用的代码少有关，不凑字数，相当有料。&nbsp;<wbr><br>
+
+尽管篇幅有限，但本书开头还是不厌其烦的给出了一些如何build
+kernel的说明，还对源码树各部分进行了说明；这从侧面表明了作者的态度，看书的时候也得动手啊。&nbsp;<wbr><br>
+
+在 http://www.kernel.org/ 得到kernel的源码，然后编译&nbsp;<wbr><br>
+<br>
+$ cd linux-source-dir/&nbsp;<wbr><br>
+$ make menuconfig&nbsp;<wbr><br>
+$ make&nbsp;<wbr><br>
+<br>
+关于menuconfig选项，升级kernel image，grub
+install的方法，这里就不赘述了，请同学自行解决，多练习练习没坏处。&nbsp;<wbr><br>
+尽管书写得比较易懂，但可能对于刚开始接触kernel的人还是有点难度，尤其是对于非科班出身的同学，没学习过体系结构和操作系统原理，先自行了解基本概念还是必要的。&nbsp;<wbr><br>
+
+<br>
+横看成岭侧成峰，让我们从几个不同的角度来认识认识kernel同学：&nbsp;<wbr><br>
+<br>
+1) 从原教旨主义的角度看，linux
+kernel就是一大坨文件目录树，主要由C/汇编源文件，脚本，配置文件，文档，以及某些二进制文件组成。由全球的志愿者(包括商业公司)在Linux社区开发维护。&nbsp;<wbr><br>
+
+<br>
+2) 从存在主义的角度看，linux
+kernel就是一个二进制文件，从上面这些源文件编译生成，一般长期保存在PC的硬盘中，使用时，这个二进制文件会被加载到内存，CPU会执行里边的机器代码。&nbsp;<wbr><br>
+
+<br>
+3) 从经典讲义的角度看，linux
+kernel上安application，下抚hardware：给app提供api让其访问hardware，同时给hardware提供driver来让其能正常工作。&nbsp;<wbr><br>
+
+<br>
+4) 从发行版的角度看，linux kernel就是个悲剧，连自己的名分都保不住，用户只知道redhat,
+ubuntu不知道kernel是神马玩意。&nbsp;<wbr><br>
+<br>
+5) 从我的角度看，kernel就是一个进程而已。
+
+13 Kernel是一个进程&nbsp;<wbr><br>
+为什么这么讲呢？咱们看一下系统启动的过程：PC上电了，bootloader首先被执行，做完一些初始化工作，它把kernel
+image加载到了内存里，让CPU执行kernel的代码，这个时候kernel是PC上跑的第一个，也是唯一的一个进程，它一下就夺过对CPU的控制权，把CPU，内存，clock，中断控制器等等先调教了一番，又初始化了内部的一些算法和数据结构，它给自己起名字叫"swapper",
+数字0是他的终身代号，然后，它就寂寞了......&nbsp;<wbr><br>
+<br>
+swapper从硬盘上面又找了一个二进制文件，叫做init，加载到内存，代号1，允许CPU执行他的代码。然后它又创建了几个内核线程来分担它的工作，这些线程有自己独特的名字和代号。而kernel也从单独的一个进程，变成了由多个内核线程组成的大进程。&nbsp;<wbr><br>
+
+<br>
+init并不是这个大进程的成员，但它努力产崽，有了许多子子孙孙进程，我们统称它们叫用户进程，这些进程访问资源的权限受到严格限制，尽管优先级有时可以调整到很高。&nbsp;<wbr><br>
+
+<br>
+kernel线程也不停创建同类，但他们互相不称父子，因为他们有共同的身体，他们的权限不受限制。&nbsp;<wbr><br>
+
+<br>
+这些用户进程和kernel线程在调度算法的指挥下，轮番取得对cpu的控制权，执行自己的代码。&nbsp;<wbr><br>
+
+而swapper呢？他其实算是第一个内核线程，不过它低调的调低自己的优先级，深居简出，当所有的进程线程都无事可做的时候，才会出来主持局面，取得cpu控制权，这时候系统处于idle状态。只要它发现其他进程有事可做，就会立刻交出CPU控制权。&nbsp;<wbr><br>
+
+<br>
+面对swapper前辈转身离去时那落寞的背影，众kernel线程都是唏嘘不已，只有init进程在背后默默竖起中指，表达当初在权限上受到不公待遇的愤恨,
+待续......&nbsp;<wbr><br>
+<br>
+评论：&nbsp;<wbr><br>
+<br>
+不考虑中断异常以及技术细节，本文从进程的角度让同学体会了kernel的存在感，kernel没有那么神秘，不是超然的造物主，仅仅是一个进程而已，只不过子线程们承担了很多特殊的管理任务而已，这些管理任务的详情和省掉的技术细节我们可以慢慢了解，找寻答案，但是对kernel的整体把握要有，头脑中始终有清晰的认识，无论系统跑到何时，我们都要知道身处何地(处于哪个进程或者中断服务程序)。&nbsp;<wbr><br>
+
+<br>
+中断和异常表面上看起来优先级太高，执行过程过于霸道，但其实并没有破坏进程间调度轮番取得CPU控制权的工作模式，这点我不打算详细阐述了，书里边对中断异常描述的很好，同学们可以自己好好感悟一下。&nbsp;<wbr><br>
+
+<br>
+从现在开始越来越不好写了啊，压力很大，不过我会加油的。
+
+14 阅读思路&nbsp;<wbr><br>
+<br>
+上文描述的启动过程涉及的源文件如下:&nbsp;<wbr><br>
+init/main.c&nbsp;<wbr><br>
+arch/x86/kernel/process_32.c&nbsp;<wbr><br>
+其实应该还包括更多的源文件，但 init/main.c
+里的start_kernel()是启动过程的核心，只要抓住这个地方，我们很容易就可以按图索骥找到其他的源文件，同学要体会这个思路。&nbsp;<wbr><br>
+
+<br>
+在看LKD的时候，同学除了要把概念原理算法弄清楚，还要像上面这样，根据书中提供的线索，把每个知识点对应的源文件名找出来，记录到笔记里，等将来需要的时候，我们再慢慢研究细节。&nbsp;<wbr><br>
+
+我们再举系统调用(system call)的例子：&nbsp;<wbr><br>
+<br>
+看过LKD里关于system call的描述，有如下的问题：&nbsp;<wbr><br>
+<br>
+1) 为什么要有system call，system call有什么功能？&nbsp;<wbr><br>
+2) Usersapce通过什么指令调用kernel的system
+call，传递了什么信息？&nbsp;<wbr><br>
+3) kernel怎么建立system call
+number和具体实现函数的对应关系？&nbsp;<wbr><br>
+4) system call在执行的时候处于什么上下文？&nbsp;<wbr><br>
+5) 实现system call handler的主要源文件在哪里？&nbsp;<wbr><br>
+6) 除了书中给出的例子，再找一个system call的实现。&nbsp;<wbr><br>
+<br>
+对于初次阅读的我们，知道这些已经不错了，最好把答案整理到笔记里。等读完这本书，我们应该对基本概念有了了解，整体上对kernel有了把握。尽管对算法，实现细节不太了解，但是我们大体知道努力的方向了：后续深入的研究源码。对于开发人员，优先选择和我们的工作关系密切的部分深入钻研吧。&nbsp;<wbr>
+
+15 内存管理&nbsp;<wbr><br>
+<br>
+想要从整体上理解linux的内存管理，我们需要理解内存管理的两个大的功能：&nbsp;<wbr><br>
+<br>
+1) 帮助MMU正常工作，实现物理地址和虚拟地址的转换(paging)&nbsp;<wbr><br>
+2) 对物理内存进行管理，分配，回收，共享等等&nbsp;<wbr><br>
+<br>
+相应的，这两个功能分别对应下面两个核心table：&nbsp;<wbr><br>
+<br>
+1) page table&nbsp;<wbr><br>
+2) page frame descriptor table, 源码中的名称
+mem_map&nbsp;<wbr><br>
+<br>
+我们顺着这个脉络，对两者进行比较，同时也就理顺了内存管理的大体思路:&nbsp;<wbr><br>
+<br>
+从分配回收方面比较：&nbsp;<wbr><br>
+1) page table 用来作paging，每个进程各有一份(我们把kernel看作一个大进程), kernel 的 page
+table 叫做 swapper_pg_dir, 是在启动的时候创建的，每个进程在出生的时候会
+以swapper_pg_dir为蓝本建立各自的page table，进程死亡的时候kernel会回收他的page table，page
+table 一般采用多级结构，最后一级page
+table的每个entry都对应一个page大小的内存，每个entry的size一般是4个字节。(arch/x86/kernel/head_32.S,
+setup_arch()@init/main.c,
+paging_init()@arch/x86/mm/init_32.c)&nbsp;<wbr><br>
+<br>
+2) mem_map
+用来管理物理内存，在启动的时候创建的，只有一个，永不释放，mem_map和物理内存一一对应，每个entry管理了一个page的物理内存，每个entry的size为40个字节左右。(free_area_init_nodes()@mm/page_alloc.c)&nbsp;<wbr><br>
+
+<br>
+具体过程：以x86体系结构为例&nbsp;<wbr><br>
+1) Linux启动之后，指令中的地址必须是虚拟的，MMU负责转为物理地址，转化的过程就是查询更新TLB缓存，检索page
+table的过程。进程在运行时，会把顶级page table的首地址保存在CR3寄存器中，MMU根据CR3的值才得以找到正确的page
+table。进程切换的时候，需要更新CR3。&nbsp;<wbr><br>
+2)
+Kernel使用buddy算法对mem_map进行管理，申请释放内存的size必须是2的n次幂page大小，在buddy之上，kernel还使用了slab算法(或slub)对内存进行再次管理，可以提供更小单位的申请释放和cache功能，让内存的使用更有效率，速度更快。(mm/page_alloc.c)&nbsp;<wbr><br>
+
+<br>
+理解了这两个table，我们就抓住了内存管理的核心，其中涉及的技术细节请自行了解，其他一些概念也很重要，如memory
+layout，zone，mm_struct, memory area management等，这里不展开了。
+
+17 驱动开发任务&nbsp;<wbr><br>
+<br>
+了解知识只是基础，还是要以任务为核心，找到解决问题的思路。我们在做驱动开发的时候，一般会面临下面几种任务：&nbsp;<wbr><br>
+
+<br>
+1) 维护现成的驱动代码，改bug；负责写用户空间的接口库或者测试程序。&nbsp;<wbr><br>
+2) 从别的平台上移植驱动到linux上。&nbsp;<wbr><br>
+3) 从头开发一个驱动，我们可能只有硬件手册上面的伪代码参考。&nbsp;<wbr><br>
+<br>
+对于1)，任务简单，往往是给新手的活，前几章的学习过程往往也是在执行这个任务的时候进行的，例如：组长给新员工分配了写测试程序的活，他需要学学类似APUE这样的书，分配修bug的任务时，他需要学学kernel和driver基础。&nbsp;<wbr><br>
+
+当我们经过了前几章的大量练习，可以很轻松的完成测试程序的任务，但是我们是有追求的程序员，我们需要给自己更高的要求，就像第六章提到的那样，不停的改进自己的测试程序，多参考开源代码成熟的例子，体会更好的编程技巧。&nbsp;<wbr><br>
+
+通过测试程序，有了对驱动接口直观的了解之后，我们开始详细的学习驱动的代码，只有完整的了解了驱动的方方面面，后边解bug的时候才能游刃有余。我们需要做到:&nbsp;<wbr><br>
+
+a) 仔细阅读硬件参考手册，了解硬件工作的原理，流程，时序图，寄存器介绍。&nbsp;<wbr><br>
+b)
+了解对应的驱动框架，比如前文提到的input，alsa，V4L2等，看看你负责的驱动是否工作于一个框架下，涉及的内核基本知识要确保都能搞懂。&nbsp;<wbr><br>
+
+c)
+分析驱动代码，不光是看，要把debug打开，跑跑测试程序，看看log，流程自然就清晰了，分析代码会快上许多，如果用示波器或者逻辑分析仪抓抓波形，可更好的加深印象。&nbsp;<wbr><br>
+
+<br>
+能做到以上这些，解bug就是很容易的事情，把前文提到的debug方法熟悉一下是必要的。debug工作本身还是有一些技巧的，需要在实践中多总结，注意观察有经验同事的做法。有时驱动的bug是硬件造成的，接线错了，少了个电阻电容，这些都是常有的事，大家不要抱怨，沟通的时候注意技巧，想办法证明自己的代码没有问题，这样才能让硬件工程师甘心改板子。&nbsp;<wbr><br>
+
+<br>
+为什么对任务1)费这么多口舌呢？因为，这个例子契合了本系列写作的初衷：完事开头难，我们要花大力气把开头的工作做好做精，基础打牢，掌握好的方法，树立信心，培养兴趣，后边的工作就会水到渠成，游刃有余。&nbsp;<wbr><br>
+
+<br>
+对于任务2)，步骤和1)几乎一样，只需要额外注意2点:&nbsp;<wbr><br>
+a) 分析好原平台的代码，移植的时候多参考linux里边现有的例子&nbsp;<wbr><br>
+b) 测试程序尽早编写，集成和修bug工作离不开它。&nbsp;<wbr><br>
+<br>
+对于任务3)，我觉得这里不需要再给出任何提示，一路走来的同学你自己琢磨吧。&nbsp;<wbr><br>
+<br>
+有意思，讲驱动的文章，却不讨论如何从头编写驱动。其实，任何看起来复杂的任务都经不起推敲和分解，当分解成一个个小块的时候，我们就看到了当年做过的大量基础练习。我们要好好练习推敲和分解，掌握自己的思路。
+
+18 网络进阶&nbsp;<wbr><br>
+<br>
+为了内容结构的完整性，写一下网络的问题，我已经很久不搞了，别说细节，给轮廓都很难了。&nbsp;<wbr><br>
+网络始终是一个实践性特别强的部分，理论如果不联系着实际理解，会学得非常痛苦。&nbsp;<wbr><br>
+一般我们有了kernel和网络编程的基础之后，可以开始学习协议栈的实现，也就是参考书&lt;9&gt;，在虚拟机上面把kernel
+网络部分的log打开，跟着书里描述的过程，大致了解一下网络协议栈。观察协议栈如何传递skbuf这个指针是很有意思的一个看点。&nbsp;<wbr><br>
+
+要想深入了解，可以从netfilter入手，它是目前国-内网-络方向的重点。&nbsp;<wbr><br>
+
+先从练习iptables命令开始，在虚拟机上面实现一个NAT网关还是不难的吧，最好把iproute这个包也安装一下，了解一下ip命令，这是配置路由表的工具，有了这两个工具的使用基础，你就会有了直观的概念。
+如够看看iptable和ip的源码，了解一下网络层的用户接口，当然更好了。&nbsp;<wbr><br>
+<br>
+进入到了解netfilter具体框架的阶段，我们要在头脑中深刻的建立这个图的印象：
+
+<img src="./linux环境学习和开发心得_柔风细雨踏青行_新浪博客_files/daf52bab8226cffc349588ffb9014a90f703ea76.jpg" real_src="http://hiphotos.baidu.com/buptwinnie/pic/item/daf52bab8226cffc349588ffb9014a90f703ea76.jpg" small="0" width="758" height="538" style="margin-bottom: 8px; clear: both; max-width: 100%; vertical-align: top;" alt="linux环境学习和开发心得" title="linux环境学习和开发心得"><br>
+
+<br>
+阅读代码，找到图中每个关键点的位置，了解相关概念。当然，还要实践一下，添加一个自己的netfilter
+module，这都是必须的。&nbsp;<wbr><br>
+<br>
+linux的路由选择过程也要彻底理解，这和netfiler也是息息相关的。&nbsp;<wbr><br>
+netfilter往往还需要配合流量控制，先学习tc这个用户空间的工具，然后在看kernel的实现。&nbsp;<wbr><br>
+
+ebtables是设置网桥规则的工具，也需要了解。&nbsp;<wbr>&nbsp;<wbr>
+
+这章也得简单潦草，算是一个草稿，等将来再改进吧。
+
+19 自我认知&nbsp;<wbr><br>
+<br>
+曾经一位很很有经验的工程师和我讲过要学会对事情分类：&nbsp;<wbr><br>
+1) 重要且紧急的事情&nbsp;<wbr><br>
+2) 不重要且紧急的事情&nbsp;<wbr><br>
+3) 重要不紧急的事情&nbsp;<wbr><br>
+4) 不重要不紧急的事情&nbsp;<wbr><br>
+要按照这个顺序展开工作，这使我第一次思考除了技术以外的一些事情。&nbsp;<wbr><br>
+<br>
+在工作开头的几年，我在打基础的同时，也经历着一个自我认知和行业认知的过程。&nbsp;<wbr><br>
+<br>
+在浮躁的社会背景下，开发工作不是一个经济效益很高的选择，而且行业整体的竞争比较激烈，新陈代谢比较快，而且业内普遍追求急功近利，重营销，不重技术等等。&nbsp;<wbr><br>
+
+<br>
+在这样的背景下，开发人员对未来进行选择很不容易，有些人天生对社会有很好的适应能力，他们很容易转型到非技术岗位，找到合适自己的方向，经济效益也不错，这是一个值得考虑的选择。&nbsp;<wbr><br>
+
+有些人不喜欢这个行业和自己的工作，于是选择了转行，&nbsp;<wbr><br>
+有些人也不喜欢但选择了硬挺，为了生存和家庭。&nbsp;<wbr><br>
+不管怎样，经历了最初的几年，每个人都要思考自己未来的职业生涯了，该怎么选择自己的道路？这是没有标准答案的问题，因为每个人的追求和价值观是不同的。&nbsp;<wbr><br>
+
+<br>
+但对于那些踏实，勤奋，热爱开发的geek工程师们，你们不能迷茫，你们要好好的把握住自己的未来。你们需要迫切解决下面这两个问题：&nbsp;<wbr><br>
+
+<br>
+成为一名优秀的工程师&nbsp;<wbr><br>
+在一个好的团队中找到适合自己的位置。&nbsp;<wbr><br>
+<br>
+达成了这两个目标，你的职业生涯豁然开朗，你的生活既充实有惬意，这也会给你带来出色的表现，其他方方面面的问题也会迎刃而解。
+
+
+20 成为牛人&nbsp;<wbr><br>
+<br>
+刚走向社会的同学往往喜欢打听别人的薪水，羡慕别人的职位，但并不关注别人奋斗的过程和成长的体会；羡慕朋友所在的公司上市，却不关心他的团队运作和管理。我们是不是应该丰富一下关注的点？&nbsp;<wbr><br>
+
+<br>
+我遇到过辗转进入心仪的大公司，拿到丰厚薪水，但抱怨生活不如意的&nbsp;<wbr><br>
+我遇到过拿到高薪，高职位，空有才干，却整天无所事事的&nbsp;<wbr><br>
+我也遇到过毕业就留在二线城市的小公司，至今做大，成为公司高管的&nbsp;<wbr><br>
+我也遇到过勤勤肯肯钻研技术，笔耕不辍，成为IT行业知名作家和创业公司CTO的&nbsp;<wbr><br>
+我也遇到过从编程转行做买卖发财的&nbsp;<wbr><br>
+<br>
+上面这些人都是传统意义上的"牛人"，都有自己的性格特点和兴趣点，每个人的轨迹都不能简单的复制，但总体来说：牛人需要付出很大的辛苦，同时在工作中表现得也很好，其中比较幸运的在付出的同时也在享受自己的事业。&nbsp;<wbr><br>
+
+<br>
+我不想做什么热爱工作的励志教育，我只是想说牛人是没有模板的，谁都有机会，希望同学们在打听薪水之余，能够多了解一下背后的故事，体会一下别人的辛勤付出，找到自己的路，即使你要混黑社会也要敬业不是。&nbsp;
+           
+            </div>
+        </div>
+        <div class="col-md-4">
+        <div class="well my_well">
+        <script charset="Shift_JIS" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_wh.js"></script>
+        </div>
+        <div class="well my_well">
+                <h4><span class="glyphicon glyphicon-time"></span>&nbsp;&nbsp;最近文章</h4>
+                <hr>
+                <ul>
+                    <li class="my_right_li"><a class="my_a" href="#">关于经典著作APUE和UNP的几点看法和个人见解</a></li>
+                    <li class="my_right_li"><a class="my_a" href="#">GNS3入门使用建议</a></li>
+                    <li class="my_right_li"><a class="my_a" href="#">开发中TCP/IP的坑</a></li>
+                    <li class="my_right_li"><a class="my_a" href="#">常见的几种高并发模型应用场景</a></li>
+                    <li class="my_right_li"><a class="my_a" href="#">linux内核入门</a></li>
+                </ul>
+            </div>
+        <div class="well my_well">
+                <h4>
+                <span class="glyphicon glyphicon-time"></span>&nbsp;&nbsp;标签</h4>
+                <hr>
+                <p class="my_p_right">
+                <span class="label label-primary my_magin_label">编程</span>
+               <span class="label label-danger my_magin_label">高并发</span>
+               <span class="label label-warning my_magin_label">c/c++开发</span>
+               <span class="label label-info my_magin_label">协议</span>
+               <span class="label label-danger my_magin_label">高并发</span>
+               <span class="label label-success my_magin_label">运维</span>
+               <span class="label label-primary my_magin_label">路由</span>
+               <span class="label label-primary my_magin_label">linux</span>
+               <span class="label label-danger my_magin_label">windows</span>
+               <span class="label label-warning my_magin_label">网络编程</span>
+               <span class="label label-info my_magin_label">nginx</span>
+               <span class="label label-success my_magin_label">apache</span>
+               </p>
+            </div>
+        </div>
+        </div>
+    </div>  
+    <div class="footer">
+        <hr>
+        <div class="container">
+            <p class="foot_p">
+                Powered by: <a href="http://www.bootcss.com/">Bootstrap</a> <a href="http://glyphicons.com/">Glyphicons Halflings</a>
+                <br>
+                Copyright © 2017-2018
+                <br>
+                <script charset="Shift_JIS" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_wh.js"></script>
+            </p>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="./js/video.min.js"></script>
+    <script>
+    videojs.options.flash.swf = "video-js.swf";
+    </script>
+    <script>
+       $(function(){
+           $('#ad-carousel').carousel();
+           $('#menu-nav .navbar-collapse a').click(function(e){
+               var href = $(this).attr('href');
+               var tabId = $(this).attr('data-tab');
+               if('#'!==href){
+                   e.preventDefault();
+                   $(document).scrollTop($(href).offset().top - 70);
+                   if(tabId){
+                       $('#feature-tab a[href=#'+tabId +']').tab('show');
+                   }
+               }
+           })
+       })
+    </script>
+  </body>
+</html>
