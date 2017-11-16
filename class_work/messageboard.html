@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="./css/video-js.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="messageboard.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="./img/logo.jpg" rel="shortcut icon" />
+  </head>
+  <body>
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="./index.html">HBC</a>
+        </div>
+        <div>
+        <ul class="nav navbar-nav">
+            <li class=""><a href="./index.html">主页</a></li>
+            <li><a href="./jianli.html">关于我</a></li>
+            <li><a href="ftp://115.159.58.102/">资料下载</a></li>
+            <li><a href="./messageboard.html">留言板</a></li>
+        </ul>
+        <div class="navbar-right navbar-form">
+        <a href="./register.html" class="btn btn-group btn-primary btn-black">注册</a>
+        </div>
+        <div class="navbar-right navbar-form">
+        <a href="login.html" class="btn btn-group btn-primary btn-black">登陆</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    C++ <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">入门语法</a></li>
+                    <li><a href="#">个人作品</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">编程工具</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">推荐书籍</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    linux <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">常用命令</a></li>
+                    <li><a href="#">TCP/IP优化相关</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">ISO及国内源汇总</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">推荐书籍</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="navbar-right navbar-form">
+        <input type="text" class="form-control" placeholder="搜一下">
+        <button class="btn btn-group btn-primary btn-black">站内搜索</button>
+        </div>
+    </div>
+    </div>
+</nav>
+    <div class="container">
+       <h1 class='deepshadow'>留言板</h1>
+        <div class="well boardwell">
+           <div class="row">
+               <div class="col-sm-1">
+               <img src="./img/logo.jpg"  style="width: 42px; height: 42px; border-radius: 42px;" alt="">
+               </div>
+               <div class="col-sm-11">
+               WheelHe<span> [北京市网友]</span>
+               <br>
+               <br>
+               <p>
+                   我们用的是腾讯云主机，clustername中配置的ip和port只能在内网访问，外网无法访问。唯一开放的端口是给充值回调用的。但是充值回调是用的socket和http库做的管理，应该不会到clusterd的吧？
+               </p>
+               <div class="col-lg-3  pull-right">回复&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="glyphicon glyphicon-hand-right"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="glyphicon glyphicon-thumbs-down"></div>
+                   </div>
+           </div>
+        </div>
+    </div>
+    <div class="well boardwell">
+           <div class="row">
+               <div class="col-sm-1">
+               <img src="./touxiangimg/1.jpg"  style="width: 42px; height: 42px; border-radius: 42px;" alt="">
+               </div>
+               <div class="col-sm-11">
+               xiaoxiao<span> [北京市网友]</span>
+               <br>
+               <br>
+               <p>
+                   在配置中指定多线程处理结果类似 为了保证最小可能影响的环境 测试时使用的单服务单线程的环境
+               </p>
+               <div class="col-lg-3  pull-right">回复&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="glyphicon glyphicon-hand-right"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="glyphicon glyphicon-thumbs-down"></div>
+                   </div>
+           </div>
+        </div>
+    </div>
+    <div class="well boardwell">
+           <div class="row">
+               <div class="col-sm-1">
+               <img src="./touxiangimg/2.jpg"  style="width: 42px; height: 42px; border-radius: 42px;" alt="">
+               </div>
+               <div class="col-sm-11">
+               虎嚄<span> [北京市网友]</span>
+               <br>
+               <br>
+               <p>
+                   我不认为改成 nodelay 有多大意义。你都跨机器了，设计的时候就应该考虑到远程调用应该有延迟。
+要改的话，不应该改 socket 库。
+               </p>
+               <div class="col-lg-3  pull-right">回复&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="glyphicon glyphicon-hand-right"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="glyphicon glyphicon-thumbs-down"></div>
+                   </div>
+           </div>
+        </div>
+    </div>
+    <div class="well boardwell">
+           <div class="row">
+               <div class="col-sm-1">
+               <img src="./touxiangimg/3.jpg"  style="width: 42px; height: 42px; border-radius: 42px;" alt="">
+               </div>
+               <div class="col-sm-11">
+               15654<span> [北京市网友]</span>
+               <br>
+               <br>
+               <p>
+                   我的意思是，你既然打算分机器来做了，就可以忽略这个延迟；如果你打算在同一机器上做，就不应该分进程。
+               </p>
+               <div class="col-lg-3  pull-right">回复&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="glyphicon glyphicon-hand-right"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="glyphicon glyphicon-thumbs-down"></div>
+                   </div>
+           </div>
+        </div>
+    </div>
+    <div class="well boardwell">
+           <div class="row">
+               <div class="col-sm-1">
+               <img src="./touxiangimg/4.jpg"  style="width: 42px; height: 42px; border-radius: 42px;" alt="">
+               </div>
+               <div class="col-sm-11">
+               魄力<span> [北京市网友]</span>
+               <br>
+               <br>
+               <p>
+                   tcp 的 nagle 算法，在特定条件下，没什么通讯量时才会表现出延迟。如果你两个 harbor 间通讯频繁（重负债），那么就不会有延迟，关闭 nagle 算法反而会增加流量负担；如果你只是偶尔通讯一下，那么 1. 跟应该采用 cluster 模式，更有弹性；2. 延迟在偶尔触发的业务上应该被允许。
+               </p>
+               <div class="col-lg-3  pull-right">回复&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="glyphicon glyphicon-hand-right"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="glyphicon glyphicon-thumbs-down"></div>
+                   </div>
+           </div>
+        </div>
+    </div>
+    <div class="well boardwell">
+           <div class="row">
+               <div class="col-sm-1">
+               <img src="./touxiangimg/5.jpg"  style="width: 42px; height: 42px; border-radius: 42px;" alt="">
+               </div>
+               <div class="col-sm-11">
+               cer<span> [北京市网友]</span>
+               <br>
+               <br>
+               <p>
+                   笔记本安装了mysql5.7,后安装APM5.2.6 显示apache和mysql打开失败，更换端口号后问题依旧，大家有什么解决办法吗？
+               </p>
+               <div class="col-lg-3  pull-right">回复&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="glyphicon glyphicon-hand-right"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="glyphicon glyphicon-thumbs-down"></div>
+                   </div>
+           </div>
+        </div>
+    </div>
+    <div class="well boardwell">
+           <div class="row">
+               <div class="col-sm-1">
+               <img src="./touxiangimg/6.jpg"  style="width: 42px; height: 42px; border-radius: 42px;" alt="">
+               </div>
+               <div class="col-sm-11">
+               pythoner<span> [北京市网友]</span>
+               <br>
+               <br>
+               <p>
+                   现在想请教你个问题，比如象你的博客是在哪里注册的呢。我觉得功能还不错，很强大，现在我的博客也开通了，但是感觉phpchina的博客的功能并不够强大。
+如果不站在新浪公司的角度上，客观的评论，你觉得对于博客你觉得哪些网站做得的比较好呢。？？
+               </p>
+               <div class="col-lg-3  pull-right">回复&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="glyphicon glyphicon-hand-right"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="glyphicon glyphicon-thumbs-down"></div>
+                   </div>
+           </div>
+        </div>
+    </div>
+    <div class="well boardwell">
+           <div class="row">
+               <div class="col-sm-1">
+               <img src="./touxiangimg/7.jpg"  style="width: 42px; height: 42px; border-radius: 42px;" alt="">
+               </div>
+               <div class="col-sm-11">
+               嘻嘻嘻<span> [北京市网友]</span>
+               <br>
+               <br>
+               <p>
+                   看看你的成绩，我想到了很多，HEHEHE！确实值得佩服！
+               </p>
+               <div class="col-lg-3  pull-right">回复&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="glyphicon glyphicon-hand-right"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="glyphicon glyphicon-thumbs-down"></div>
+                   </div>
+           </div>
+        </div>
+    </div>
+    <div class="row">
+    <div class="col-md-4">
+    <img src="./touxiangimg/1.jpg" style="width: 42px; height: 42px; border-radius: 42px;" alt="">
+    xiaoxiao
+    </div>
+    <div class="col-md-8 pull-right">
+     <textarea class="form-control" rows="3"></textarea>
+     <br>
+     <div class="glyphicon glyphicon-picture"></div>
+     <div class="glyphicon glyphicon-heart-empty"></div>
+    <div class="btn btn-group btn-primary pull-right">发表评论</div>
+    </div>
+    </div>
+      </div>
+    
+    <div class="footer">
+        <hr>
+        <div class="container">
+            <p class="foot_p">
+                Powered by: <a href="http://www.bootcss.com/">Bootstrap</a> <a href="http://glyphicons.com/">Glyphicons Halflings</a>
+                <br>
+                Copyright © 2017-2018
+            </p>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="./js/video.min.js"></script>
+    <script>
+    videojs.options.flash.swf = "video-js.swf";
+    </script>
+    <script>
+       $(function(){
+           $('#ad-carousel').carousel();
+           $('#menu-nav .navbar-collapse a').click(function(e){
+               var href = $(this).attr('href');
+               var tabId = $(this).attr('data-tab');
+               if('#'!==href){
+                   e.preventDefault();
+                   $(document).scrollTop($(href).offset().top - 70);
+                   if(tabId){
+                       $('#feature-tab a[href=#'+tabId +']').tab('show');
+                   }
+               }
+           })
+       })
+    </script>
+  </body>
+</html>
